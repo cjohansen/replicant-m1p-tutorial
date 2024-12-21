@@ -1,0 +1,7 @@
+{:deps {}
+ :dev-http {8081 ["resources/public"]}
+ :builds
+ {:app
+  {:target :browser
+   :modules {:main {:init-fn replicant-i18n.core/main}}
+   :dev {:output-dir "resources/public/js"}}}}
